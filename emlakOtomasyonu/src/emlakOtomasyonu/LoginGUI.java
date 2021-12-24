@@ -123,19 +123,16 @@ public class LoginGUI extends JFrame {
 		textField_1.setBounds(325, 109, 281, 31);
 		panel_1.add(textField_1);
 		
-		JButton btn_signUp_1 = new JButton("Sign Up");
-		btn_signUp_1.setFont(new Font("Tahoma", Font.BOLD, 15));
-		btn_signUp_1.setBounds(152, 168, 200, 59);
-		panel_1.add(btn_signUp_1);
-		
 		JButton btn_signIn_1 = new JButton("Sign In");
 		btn_signIn_1.setFont(new Font("Tahoma", Font.BOLD, 15));
-		btn_signIn_1.setBounds(406, 168, 200, 59);
+		btn_signIn_1.setBounds(152, 168, 454, 59);
 		panel_1.add(btn_signIn_1);
 		
 		JLabel lblNewLabel_1 = new JLabel("Property Management System");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
 		lblNewLabel_1.setBounds(278, 120, 235, 44);
 		w_pane.add(lblNewLabel_1);
+		
+		dataBase.connect();
 	}
 }
